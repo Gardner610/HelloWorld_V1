@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9F9F9"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@drawable/placeholder_default"
+        android:id="@+id/listItemImage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listItemFirstName"
+        android:text="NameText"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="16sp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/listItemImage"
+        android:layout_toEndOf="@+id/listItemImage"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listItemSurName"
+        android:text="SurnameText"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/listItemFirstName"
+        android:layout_alignLeft="@+id/listItemFirstName"
+        android:layout_alignStart="@+id/listItemFirstName" />
+
+</RelativeLayout>
